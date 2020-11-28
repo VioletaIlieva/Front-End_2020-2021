@@ -3,4 +3,5 @@
   Screenshots:
       
       1. Login page
-      ![name-of-you-image](https://github.com/VioletaIlieva/Front-End_2020-2021/blob/main/Homework/Screenshots/Login.png)
+      ![Login](https://user-images.githubusercontent.com/25322226/100518205-cf70d380-3198-11eb-90ed-40d058a5ed9b.png)
+
