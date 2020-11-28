@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	1. На страницата с постовете, при намаляне на резолюцята и свиване на екрана приложението не работи правилно..
+	Има какво да се довършва
+	2. Не успах да намеря същата картинка за коментар в страницата за постовете..
+-->
+
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flutter - Posts</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header class="posts-header">
+		<h1 class="posts-page-header">Flutter</h1>
+		<div class="posts-search">
+			<input type="text" placeholder="Search">
+			<i class="fa fa-search"></i>
+		</div>
+		
+	</header>
+
+	<div class="container-bg">
+		<main class="container">
+			<aside class="profile">
+				<figure class="profile-avatar">
+					<img src="avatar.png" alt="avatar" class="profile-image" width="84" height="84" />
+					<figcaption class="profile-name">Виолета Илиева</figcaption>
+				</figure>
+
+				<div class="profile-details">
+					<div class="profile-info">
+						<h3>Posts</h3>
+						<p>1</p>
+					</div>
+					<div class="profile-info">
+						<h3>Reactions</h3>
+						<p>7</p>
+					</div>
+
+					<button class="profile-button" id="logout-btn">Log Out</button>
+				</div>
+			</aside>
+			<section class="posts">
+				<header class="pots-section-header">
+					<figure class="posts-avatar">
+						<img src="avatar.png" alt="avatar" class="profile-image" id="prof-img">
+					</figure>
+					<div class="say-something-container">
+						<input type="text" placeholder="Say something">
+						<i class="fa fa-comment-o"></i>
+					</div>
+				</header>
+				<div class="post">
+					<img src="avatar.png" alt="avatar">
+					<figure class="post-avatar-2">
+						<figcaption class="post-name"><b>Ivan Ivanov</b></figcaption>
+						<p>0 seconds ago</p>
+						<i class="fa fa-times"></i>
+					</figure>
+					<div class="post-text">
+						<p>Ex eu non voluptate esse allqua velit. Nulla duis ipsum inciddunt cupia
+						laborum commodo consequat in. Nostrud elit dolor laboris tempor officia duis
+						ecercitation anim voliptate ut enim officia proident. Labore elit esse velit quis
+						et voluptate officia laboris cullum dolor paritatur excepteur esse laborum.
+						Veniam adipisicing quis nisi cillum voluptate veniam nulla sunt.</p>
+						<div class="reactions">
+							<div class="post-like-dislike">
+								<i class="fa fa-thumbs-o-up"></i>
+								<p>5</p>
+							</div>
+							<div class="post-like-dislike">
+								<i class="fa fa-thumbs-o-down"></i>
+								<p>3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="post">
+					<img src="avatar.png" alt="avatar">
+					<figure class="post-avatar-2">
+						<figcaption class="post-name"><b>Martin</b></figcaption>
+						<p>Last month</p>
+						<i class="fa fa-times"></i>
+					</figure>
+					<div class="post-text">
+						<p>Mollit consequat ipsum sit laboris incididunt sunt deserunt vellt elit eu
+						proident.</p>
+						<div class="reactions">
+							<div class="post-like-dislike">
+								<i class="fa fa-thumbs-o-up"></i>
+								<p>3</p>
+							</div>
+							<div class="post-like-dislike">
+								<i class="fa fa-thumbs-o-down"></i>
+								<p>0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>
