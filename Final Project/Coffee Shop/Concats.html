@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coffee Shop - Contacts</title>
+		<link rel = "stylesheet" type = "text/css" href = "contacts.css">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<div class = "row clearfix">
+					<img src = "logo.png" class = "logo">
+					
+					<ul class = "main-nav animated slideInDown" id = "check-class">
+						<li><a href = "#">CAKE DELIVERY</a></li>
+						<li><a href = "#">COTACTS</a></li>
+						<li><a href = "#">CHECK MORE</a></li>
+						<li><a href = "Login_Reg.html" id = "SignIn">SIGN UP</a></li>
+					</ul>
+					<a href = "#" class = "mobile-icon" onclick = "slideshow()"> <i class = "fa fa-bars"></i> </a>
+				</div>
+			</nav>
+			
+		</header>
+		
+		<div class="container">
+			<div class="form">
+				<div class="contact-info">
+					<h3 class="title">Let's get in touch</h3>
+					<p class="text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+						dolorum adipisci recusandae praesentium dicta!
+					</p>
+
+					<div class="info">
+						<div class="information">
+						<img src="worldwide-location-64.png" class="icon" alt="" />
+						<p>92 Cherry Drive Uniondale, NY 11553</p>
+					</div>
+					<div class="information">
+						<img src="email-64.png" class="icon" alt="" />
+						<p>lorem@ipsum.com</p>
+					</div>
+					<div class="information">
+						<img src="phone-30-64.png" class="icon" alt="" />
+						<p>123-456-789</p>
+					</div>
+				</div>
+
+				<div class="social-media">
+					<p>Connect with us :</p>
+					<div class="social-icons">
+						<a href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-form">
+				<span class="circle one"></span>
+				<span class="circle two"></span>
+
+				<form action="index.html" autocomplete="off">
+					<h3 class="title">Contact us</h3>
+					<div class="input-container">
+						<input type="text" name="name" class="input" />
+						<label for="">Username</label>
+						<span>Username</span>
+					</div>
+					<div class="input-container">
+						<input type="email" name="email" class="input" />
+						<label for="">Email</label>
+						<span>Email</span>
+					</div>
+					<div class="input-container">
+						<input type="tel" name="phone" class="input" />
+						<label for="">Phone</label>
+						<span>Phone</span>
+					</div>
+					<div class="input-container textarea">
+						<textarea name="message" class="input"></textarea>
+						<label for="">Message</label>
+						<span>Message</span>
+					</div>
+					<input type="submit" value="Send" class="btn" />
+				</form>
+			</div>
+		</div>
+		
+		<script src="contacts.js"></script>
+		
+		<script type = "text/javascript">
+		"use strict";
+
+			function slideshow(){
+				var x = document.getElementById('check-class');
+				if(x.style.display === "none"){
+					x.style.display = "block";
+				}
+				else{
+					x.style.display = "none";
+				}
+			}
+			
+		</script>
+	</body>
+</html>

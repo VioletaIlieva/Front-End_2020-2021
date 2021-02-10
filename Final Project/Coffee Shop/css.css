@@ -1,0 +1,246 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	color: white;
+	font-family: 'Flamenco', cursive;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('background.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.row{
+	max-width: 1700px;
+	/*margin: 0 auto;*/
+}
+
+.logo{
+	height: 320px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+	margin-right: 30px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #61300d;
+}
+
+.main-content-header{
+	width: 1700px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+
+p {
+	color = black;
+}
+
+#login{
+	color = green;
+}
+
+input{
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+}
+
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+	background-color: transperant;
+	color: #61300d;
+	margin-right: 15px;
+	border: 1px solid #61300d;
+}
+
+.btn-full:hover{
+	background-color: #fff;
+}
+
+.btn-nav{
+	background-color: transperant;
+	color:#fff;
+	border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+	background-color: #61300d;
+}
+
+.colorchange{
+	animation: colorchangecoffee 1s infinite;
+}
+
+@keyframes colorchangecoffee{
+	0%{color: #dcc7b8;}
+	25%{color: #a26a42;}
+	50%{color: #61300d;}
+	75%{color: #a26a42}
+	100%{color: #b98f71;}
+}
+
+
+.mobile-icon{
+	display: none;
+}
+
+#password_error, #email_error{
+	color: red;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display:none;
+	width: 345px;
+	height: 25px;
+	margin: 0 auto;
+}
+
+#password_error{
+	padding-bottom: 15px;
+	margin-bottom:15px;
+}
+
+
+@media only screen and (max-width: 1700px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 1112px){
+	h1{
+		font-size: 200%;
+	}
+	
+	.main-nav{
+		display: none;
+	}
+	
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	
+	.main-nav{
+		float: left;
+	}
+	
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 847px){
+	h1{
+		font-size: 180%;
+	}
+	
+@media only screen and (max-width: 774px){
+	h1{
+		font-size: 150%;
+	}
+
+@media only screen and (max-width: 665px){
+	h1{
+		font-size: 140%;
+	}
+	
+	.logo{
+		height: 150px;
+		width: auto;
+		float: left;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 463px){
+	h1{
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 459px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+	
+	h1{
+		font-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 370px){
+	h1{
+		font-size: 80%;
+	}
+}

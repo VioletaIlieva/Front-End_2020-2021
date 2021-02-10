@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>Login / Sign Up Form</title>
+		<link rel="stylesheet" href="LoginCss.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>	
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+
+		<div class="container">
+		<a href = "Coffee Shop.html" class = "home_button"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+			<form class="form" id="login">
+				<h1 class="form_title">Login</h1>
+				<div class="form_message form_message_error"></div>
+				<div class="form_inputs">
+					<input type="text" class="form_input" autofocus placeholder="Username or email">
+					<div class="form_input_error"></div>
+				</div>
+				<div class="form_inputs">
+					<input type="password" class="form_input" autofocus placeholder="Password">
+					<div class="form_input_error"></div>
+				</div>
+				<button class="form_button" onclick="signIn()" type="Submit">Continue</button>
+				<p class="form_text">
+					<a href="#" class="form_link">Forgot you password?</a>
+				</p>
+				<p class="form_text">
+					<a class="form_link" id="linkCreateAccount">Don't have an account? Create account</a>
+				</p>
+			</form>
+			
+			<form class="form form_hidden" id="createAccount">
+				<h1 class="form_title">Create Acount</h1>
+				<div class="form_message form_message_error"></div>
+				<div class="form_inputs">
+					<input type="text" id="signupUsername" class="form_input" autofocus placeholder="Username">
+					<div class="form_input_error"></div>
+				</div>
+				<div class="form_inputs">
+					<input type="text" id ="signupEmail" class="form_input" autofocus placeholder="Email Address">
+					<div class="form_input_error"></div>
+				</div>
+				<div class="form_inputs">
+					<input type="password" id ="signupPassword" class="form_input" autofocus placeholder="Password">
+					<div class="form_input_error"></div>
+				</div>
+				<div class="form_inputs">
+					<input type="password" id ="signupConfirmPassword" class="form_input" autofocus placeholder="Confirm Password">
+					<div class="form_input_error"></div>
+				</div>
+				<button class="form_button" type="Submit" onclick="signUp()" id="Submit">Continue</button>
+				<p class="form_text">
+					<a class="form_link" id="linkLogin">Already have an account? Sign In</a>
+				</p>
+			</form>
+			
+		</div>
+		<script src="Login_Reg.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+		<script>
+		  // Your web app's Firebase configuration
+		  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		  var firebaseConfig = {
+			apiKey: "AIzaSyAO5DSRAteeJigi1MrlNY1DCsJGOoyETSw",
+			authDomain: "coffee-shop-10a2c.firebaseapp.com",
+			databaseURL: "https://coffee-shop-10a2c-default-rtdb.firebaseio.com",
+			projectId: "coffee-shop-10a2c",
+			storageBucket: "coffee-shop-10a2c.appspot.com",
+			messagingSenderId: "999899286450",
+			appId: "1:999899286450:web:08c2a03c54039d36d072ab",
+			measurementId: "G-RG03WN2ZNR"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		</script>
+	</body>
+</html>
